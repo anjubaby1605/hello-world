@@ -1,0 +1,224 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background: #589b37;
+}
+.nav-link,
+.navbar-brand {
+    color: #080808;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.header {
+    background-image: url('orange.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 60vh; /* Ensures the header takes enough height */
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    width: 80%;
+}
+.description h1 {
+    color: #080707;
+    font-size: 2rem;
+}
+.description p {
+    color: #080707;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description button {
+    border: 1px solid #338609;
+    background: #338609;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+}
+.description button:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
+}
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    text-align: center;
+}
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.features img {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+    max-width: 100%;
+    height: auto;
+}
+.features .form-control,
+.features input {
+    border-radius: 5px;
+}
+.features .btn {
+    background-color: #589b37;
+    border: 1px solid #589b37;
+    color: #080808;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+}
+.background {
+    background: #dedec8;
+    padding: 4em 0;
+}
+.team {
+    color: #FF8C00;
+    padding: 0 5%;
+    text-align: center;
+}
+.team .card-columns {
+    column-count: 3;
+}
+.team .card {
+    background: none;
+    border: none;
+}
+.team .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.page-footer {
+    background-color: #FF8C00;
+    color: #0c0c0c;
+    padding: 60px 0 30px;
+    text-align: center;
+}
+.footer-copyright {
+    color: #060606;
+    padding: 40px 0;
+}
+.cake-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.modal-header img.rounded-circle {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---- RESPONSIVE STYLES ---- */
+@media (max-width: 991px) {
+    .description {
+        top: 35%;
+        width: 90%;
+    }
+    .description h1 {
+        font-size: 1.8rem;
+    }
+    .description p {
+        font-size: 1.1rem;
+    }
+    .team .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        top: 30%;
+        text-align: center;
+    }
+    .team {
+        padding: 0 20px;
+    }
+    .team .card-columns {
+        column-count: 1;
+    }
+    .features {
+        margin: 2em auto;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 575px) {
+    .description {
+        top: 20%;
+        left: 0;
+        transform: none;
+        padding: 0 15px;
+    }
+    .description h1 {
+        font-size: 1.5rem;
+    }
+    .description p {
+        font-size: 1rem;
+    }
+    .team .card-columns {
+        column-count: 1;
+    }
+    .features {
+        margin: 1em auto;
+        padding: 0.5em;
+    }
+}
+#demo-modal .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+    padding-top: 20px;
+}
+
+#demo-modal .modal-header img {
+    height: 100px; /* Adjust the size if needed */
+    width: 100px;
+    object-fit: cover;
+}
+
+#demo-modal .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.equal-size {
+    width: 100%;   /* Make images take up full container width */
+    max-width: 300px;  /* Adjust as needed for equal size */
+    height: auto;  /* Maintain aspect ratio */
+}
