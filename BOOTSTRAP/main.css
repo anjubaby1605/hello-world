@@ -44,12 +44,17 @@ body {
 }
 .description h1 {
     color: #080707;
-    font-size: 2rem;
+    font-size: 3.5rem; /* Increase as needed */
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .description p {
     color: #080707;
     font-size: 1.3rem;
     line-height: 1.5;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
 }
 .description button {
     border: 1px solid #338609;
@@ -127,12 +132,14 @@ body {
     color: #060606;
     padding: 40px 0;
 }
-.cake-img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
+    .cake-img {
+        width: 100%; /* Ensures responsiveness */
+        height: 250px; /* Set a fixed height */
+        object-fit: cover; /* Ensures images scale properly without distortion */
+        border-radius: 10px; /* Optional: gives rounded edges */
+    }
+    
+
 .modal-header img.rounded-circle {
     height: 80px;
     width: 80px;
@@ -221,4 +228,10 @@ html {
     width: 100%;   /* Make images take up full container width */
     max-width: 300px;  /* Adjust as needed for equal size */
     height: auto;  /* Maintain aspect ratio */
+}
+.card-img-top {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px; /* Adjust based on your design */
+    height: 150px;
 }
